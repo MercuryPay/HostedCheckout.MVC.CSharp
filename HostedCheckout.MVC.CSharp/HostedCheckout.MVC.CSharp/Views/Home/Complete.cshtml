@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<script>
+
+    // A more cryptic one-liner, to awe & impress.
+    //
+    // No need to protect `window` since `this` is
+    // immutable, and at the topmost level means
+    // `window` anyways. Here, we compare locations
+    // on the left side of the "&&" and execute the
+    // code in parenthesis if that condition is
+    // true (top location isn't iframe location).
+    //
+    // Otherwise, nothing happens. It's basically an
+    // if statement without wrapping curly brackets.
+    //
+    // Weird, I know. But pretty cool, right? :)
+
+    this.top.location !== this.location && (this.top.location = this.location);
+
+</script>
+
+<div class="jumbotron">
+    <h1>ASP.NET</h1>
+    <p class="lead">TEST Merchant</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Payment Complete</h2>
+        <p>
+            Done!
+        </p>
+    </div>
+
+</div>
