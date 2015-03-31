@@ -1,4 +1,6 @@
-﻿@{
+﻿@model HostedCheckout.MVC.CSharp.HCService.PaymentInfoResponse
+
+@{
     ViewBag.Title = "Complete";
 }
 
@@ -23,12 +25,79 @@
 </script>
 
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Payment Complete</h2>
-        <p>
-            Done!
-        </p>
-    </div>
+<h2>Payment Response Details</h2>
 
+<div>
+    <hr />
+    <table>
+            <tr>
+                <td>
+                    <b>@Html.DisplayNameFor(model => model.AcqRefData)</b>
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.AcqRefData)
+                </td>
+            </tr>
+        <tr>
+            <td>
+                <b>@Html.DisplayNameFor(model => model.Amount)</b>
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Amount)
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <b>@Html.DisplayNameFor(model => model.CardholderName)</b>
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.CardholderName)
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <b>@Html.DisplayNameFor(model => model.CardType)</b>
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.CardType)
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <b>@Html.DisplayNameFor(model => model.DisplayMessage)</b>
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.DisplayMessage)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>@Html.DisplayNameFor(model => model.ExpDate)</b>
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.ExpDate)
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <b>@Html.DisplayNameFor(model => model.MaskedAccount)</b>
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.MaskedAccount)
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <b>@Html.DisplayNameFor(model => model.Token)</b>
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Token)
+            </td>
+        </tr>
+    </table>
 </div>

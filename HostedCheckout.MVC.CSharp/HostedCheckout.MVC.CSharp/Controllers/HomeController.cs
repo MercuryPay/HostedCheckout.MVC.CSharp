@@ -44,13 +44,35 @@ namespace HostedCheckout.MVC.CSharp.Controllers
             req.PaymentID = PaymentID;
             var resp = client.VerifyPayment(req);
 
+            return View(resp);
+        }
+
+        public ActionResult RemoveCSS()
+        {
+            var request = new HCService.CssRemoveRequest();
+            request.MerchantID = "018847445761734";
+            request.Password = "Y6@Mepyn!r0LsMNq";
+
+            var client = new HCService.HCServiceSoapClient();
+
+            var response = client.RemoveCSS(request);
+            if (response != null)
+            {
+                var blah = response.ResponseCode.ToString();
+                var blah2 = HttpUtility.HtmlDecode(response.Message);
+            }
+            else
+            {
+                var blah3 = "Response from RemoveCss was Null";
+            }
             return View();
+
         }
 
         public ActionResult CSS()
         {
             
-HCService.CssUploadRequest request = new HCService.CssUploadRequest();
+            HCService.CssUploadRequest request = new HCService.CssUploadRequest();
             request.MerchantID = "912127036979183";
             request.Password = "e%MH0HJs3$3wk+ob";
             request.Css = ".btnDefaultIFrame {color: #fff; background-color: #f7901e; border-color: transparent;}";
