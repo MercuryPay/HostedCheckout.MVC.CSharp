@@ -13,6 +13,32 @@ namespace HostedCheckout.MVC.CSharp.Controllers
             return View();
         }
 
+        public ActionResult CSS ()
+        {
+            HCService.CssUploadRequest request = new HCService.CssUploadRequest();
+            request.MerchantID = "013163015566916";
+            request.Password = "KR568r@1spyC13,T";
+            request.Css = ".divTotalDefault{color: #000000;background-color: red;}";
+
+            //Call the web service to initialize the UploadCSS request.
+            HCService.HCServiceSoapClient client = new HCService.HCServiceSoapClient();
+            HCService.CssAdminResponse response = new HCService.CssAdminResponse();
+                response = client.UploadCSS(request);
+                if (response != null)
+                {
+                    var blah = response.ResponseCode.ToString();
+                    var blah2 = HttpUtility.HtmlDecode(response.Message);
+                }
+
+                else
+                {
+                    //something seriously wrong. probably couldn't connect to the web service at all
+                    var blah3 = "Response from UploadCss was Null";
+
+                }
+                return View();
+        }
+
         public ActionResult Buy()
         {
             HCService.HCServiceSoapClient client = new HCService.HCServiceSoapClient();

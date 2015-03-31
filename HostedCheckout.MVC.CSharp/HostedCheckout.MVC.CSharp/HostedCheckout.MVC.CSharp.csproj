@@ -217,6 +217,7 @@
     <None Include="Service References\HCService\hcservice.wsdl" />
     <Content Include="Views\Home\Buy.cshtml" />
     <Content Include="Views\Home\Complete.cshtml" />
+    <Content Include="Views\Home\CSS.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
