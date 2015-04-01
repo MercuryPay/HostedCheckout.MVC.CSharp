@@ -71,17 +71,11 @@ namespace HostedCheckout.MVC.CSharp.Controllers
 
         public ActionResult CSS()
         {
-            
 
-
-HCService.CssUploadRequest request = new HCService.CssUploadRequest();
-
-            HCService.CssUploadRequest req = new HCService.CssUploadRequest();
-
-            req.MerchantID = "912127036979183";
-            req.Password = "e%MH0HJs3$3wk+ob";
-            req.Css = ".btnDefaultIFrame {color: #fff; background-color: #f7901e; border-color: transparent; border: 1px solid transparent; border-radius: 2px;} .btnDefaultIFrame:hover {color: #fff; background-color: #f7901e; border-color: transparent;}";
-
+            HCService.CssUploadRequest request = new HCService.CssUploadRequest();
+            request.MerchantID = "912127036979183";
+            request.Password = "e%MH0HJs3$3wk+ob";
+            request.Css = ".btnDefaultIFrame {color: #fff; background-color: #f7901e; border-color: transparent; border: 1px solid transparent; border-radius: 2px;} .btnDefaultIFrame:hover {color: #fff; background-color: #f6801a; border-color: transparent;} .divTotalIFrameDefault {display: none;} .divSecurityLogoIFrame {display: none;} .divLogo {display: none;} .watermarkCustom {color: #aaaaaa; font-style: normal; vertical-align: middle; font-size: large; padding: 3px;} body.bodyECommIFrame {font-family: italic 18px monospace, sans-serif; width: 100%; height: 100%; margin-left: 0px; margin-top: 0px; padding: 0; min-height: 300px;text-align: center; white-space: normal;} #divMainIFrame{width: 450px; font-family: arial;font-weight:200;height:100%;clear: left; border: none;}";
 
             HCService.HCServiceSoapClient client = new HCService.HCServiceSoapClient();
             HCService.CssAdminResponse response = new HCService.CssAdminResponse();
