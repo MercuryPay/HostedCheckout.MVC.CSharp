@@ -220,6 +220,7 @@
     <Content Include="Views\Home\Buy.cshtml" />
     <Content Include="Views\Home\Complete.cshtml" />
     <Content Include="Views\Home\CSS.cshtml" />
+    <Content Include="Views\Home\RemoveCSS.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
