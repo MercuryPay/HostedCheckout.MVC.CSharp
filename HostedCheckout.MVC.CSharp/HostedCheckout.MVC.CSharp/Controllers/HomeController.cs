@@ -50,10 +50,11 @@ namespace HostedCheckout.MVC.CSharp.Controllers
         public ActionResult CSS()
         {
             
+
 HCService.CssUploadRequest request = new HCService.CssUploadRequest();
             request.MerchantID = "912127036979183";
             request.Password = "e%MH0HJs3$3wk+ob";
-            request.Css = ".btnDefaultIFrame {color: #fff; background-color: #f7901e; border-color: transparent;}";
+            request.Css = ".btnDefaultIFrame {color: #fff; background-color: #f7901e; border-color: transparent; border: 1px solid transparent; border-radius: 2px;} .btnDefaultIFrame:hover {color: #fff; background-color: #f7901e; border-color: transparent;}";
 
 
             HCService.HCServiceSoapClient client = new HCService.HCServiceSoapClient();
