@@ -25,11 +25,38 @@
 </script>
 
 
-<h2>Payment Response Details</h2>
 
-<div>
-    <hr />
-    <table>
+
+<div class="container">
+
+    <div class="col-sm-4 col-lg-4 col-md-4">
+        <div class="thumbnail">
+            <img src="../../Content/img/henry.png" alt="" />
+            <div class="caption">
+                <h4 class="pull-right"></h4>
+                <h4>
+                    <a href="#">Handyman Henry</a>
+                </h4>
+                <p>No job too small. Henry will clean up your unfinished honey dos.</p>
+            </div>
+            <hr />
+            <div class="ratings">
+                <p class="pull-right">12 reviews</p>
+                <p>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-4 col-lg-8 col-md-4">
+        <h2>Payment Response Details</h2>
+        <hr />
+        <table class="table table-striped table-responsive">
             <tr>
                 <td>
                     <b>@Html.DisplayNameFor(model => model.AcqRefData)</b>
@@ -38,66 +65,67 @@
                     @Html.DisplayFor(model => model.AcqRefData)
                 </td>
             </tr>
-        <tr>
-            <td>
-                <b>@Html.DisplayNameFor(model => model.Amount)</b>
-            </td>
-            <td>
-                @Html.DisplayFor(model => model.Amount)
-            </td>
-        </tr>
+            <tr>
+                <td>
+                    <b>@Html.DisplayNameFor(model => model.Amount)</b>
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.Amount)
+                </td>
+            </tr>
 
-        <tr>
-            <td>
-                <b>@Html.DisplayNameFor(model => model.CardholderName)</b>
-            </td>
-            <td>
-                @Html.DisplayFor(model => model.CardholderName)
-            </td>
-        </tr>
+            <tr>
+                <td>
+                    <b>@Html.DisplayNameFor(model => model.CardholderName)</b>
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.CardholderName)
+                </td>
+            </tr>
 
-        <tr>
-            <td>
-                <b>@Html.DisplayNameFor(model => model.CardType)</b>
-            </td>
-            <td>
-                @Html.DisplayFor(model => model.CardType)
-            </td>
-        </tr>
+            <tr>
+                <td>
+                    <b>@Html.DisplayNameFor(model => model.CardType)</b>
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.CardType)
+                </td>
+            </tr>
 
-        <tr>
-            <td>
-                <b>@Html.DisplayNameFor(model => model.DisplayMessage)</b>
-            </td>
-            <td>
-                @Html.DisplayFor(model => model.DisplayMessage)
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <b>@Html.DisplayNameFor(model => model.ExpDate)</b>
-            </td>
-            <td>
-                @Html.DisplayFor(model => model.ExpDate)
-            </td>
-        </tr>
+            <tr>
+                <td>
+                    <b>@Html.DisplayNameFor(model => model.DisplayMessage)</b>
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.DisplayMessage)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>@Html.DisplayNameFor(model => model.ExpDate)</b>
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.ExpDate)
+                </td>
+            </tr>
 
-        <tr>
-            <td>
-                <b>@Html.DisplayNameFor(model => model.MaskedAccount)</b>
-            </td>
-            <td>
-                @Html.DisplayFor(model => model.MaskedAccount)
-            </td>
-        </tr>
+            <tr>
+                <td>
+                    <b>@Html.DisplayNameFor(model => model.MaskedAccount)</b>
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.MaskedAccount)
+                </td>
+            </tr>
 
-        <tr>
-            <td>
-                <b>@Html.DisplayNameFor(model => model.Token)</b>
-            </td>
-            <td>
-                @Html.DisplayFor(model => model.Token)
-            </td>
-        </tr>
-    </table>
+            <tr>
+                <td>
+                    <b>@Html.DisplayNameFor(model => model.Token)</b>
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.Token)
+                </td>
+            </tr>
+        </table>
+    </div>
 </div>
