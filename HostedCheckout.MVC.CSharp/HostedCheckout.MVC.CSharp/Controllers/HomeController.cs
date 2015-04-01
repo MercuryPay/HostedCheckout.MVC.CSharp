@@ -51,8 +51,8 @@ namespace HostedCheckout.MVC.CSharp.Controllers
         public ActionResult RemoveCSS()
         {
             var request = new HCService.CssRemoveRequest();
-            request.MerchantID = "018847445761734";
-            request.Password = "Y6@Mepyn!r0LsMNq";
+            request.MerchantID = "912127036979183";
+            request.Password = "e%MH0HJs3$3wk+ob";
 
             var client = new HCService.HCServiceSoapClient();
 
