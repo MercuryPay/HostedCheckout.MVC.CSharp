@@ -29,6 +29,7 @@ namespace HostedCheckout.MVC.CSharp.Controllers
             req.ReturnUrl = "http://localhost:51619/Home/Return";
             req.OperatorID = "test";
             req.DisplayStyle = "custom";
+            req.CancelButton = "on";
             var resp = client.InitializePayment(req);
 
             ViewBag.URL = "https://hc.mercurydev.net/CheckoutIFrame.aspx?ReturnMethod=get&pid=" + resp.PaymentID;
