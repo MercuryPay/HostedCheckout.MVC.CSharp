@@ -132,7 +132,9 @@ header .intro-text .intro-heading {
   vertical-align: middle;
   cursor: pointer;
   border: 1px solid transparent;
-  border-radius: 2px;
+  border-radius: 0;
+      outline: 0 !important;
+    -webkit-appearance:none;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -142,8 +144,7 @@ header .intro-text .intro-heading {
 
 .btn:focus {
   outline: thin dotted #333;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
+  outline: none;
 }
 
 .btn:hover,
@@ -173,7 +174,7 @@ fieldset[disabled] .btn {
 
 .btn-buy {
   color: #fff;
-  background-color: #f7901e;
+  background-color: #00a651;
   border-color: transparent;
 }
 
@@ -183,7 +184,7 @@ fieldset[disabled] .btn {
 .btn-buy.active,
 .open .dropdown-toggle.btn-buy {
   color: #fff;
-  background-color: #f6801a;
+  background-color: #067a3f;
   border-color: transparent;
 }
 
@@ -210,4 +211,37 @@ fieldset[disabled] .btn-buy:active,
 fieldset[disabled] .btn-buy.active {
   background-color: #ffffff;
   border-color: #cccccc;
+}
+
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 44px;
+  padding: 12px 12px;
+  margin: 5px;
+  font-size: 14px;
+  color: #555555;
+  vertical-align: middle;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+          transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+.form-control:focus {
+  border-color: transparent;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.form-control[disabled],
+.form-control[readonly],
+fieldset[disabled] .form-control {
+  cursor: not-allowed;
+  background-color: #eeeeee;
 }
