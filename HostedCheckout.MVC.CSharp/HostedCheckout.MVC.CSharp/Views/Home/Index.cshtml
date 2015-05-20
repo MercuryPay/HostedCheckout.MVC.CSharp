@@ -2,134 +2,80 @@
     ViewBag.Title = "Home Page";
 }
 
-@*
-
-*@
-
-<!-- Header -->
-@*<header>
-        <div class="container">
-            <div class="intro-text">
-                <div class="intro-lead-in">
-                    <div>
-                        <div class="intro-heading"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>*@
-
 <!-- Page Content -->
 <div class="container">
 
-    <div class="row">
-        <hr />
+    <div class="col-sm-6">
+        <h4 class="top-title">
+            Reserve Your Tee Time Online
+        </h4>
+        <p class="top-text">Reserving your tee time online is easy and fast.</p>
 
-        <div class="row">
+        <div class="row col-lg-12">
 
-            <div class="col-sm-4 col-lg-offset-2 col-md-4">
+            <select class="form-control">
+                <option>Select A Date</option>
+                <option>Today</option>
+                <option>Tomorrow</option>
+                <option>This Saturday</option>
+                <option>Tuesday</option>
+            </select>
 
-                <div class="col-lg-12">
-                    @*<img src="" alt="" />*@
-                    <div class="row">
+            <select class="form-control">
+                <option>Select A Time</option>
+                <option>Early</option>
+                <option>Late</option>
+                <option>Doesn't Matter</option>
+            </select>
 
-                        <h4 class="top-title">
-                            Reserve Your Tee Time Online
-                        </h4>
+            <button type="button" data-toggle="dropdown" class="btn btn-buy dropdown-toggle">Book <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li><a ahref="#"><input type="button" class="btn btn-buy" onclick="location.href='/Home/Buy';" value="Book" /></a></li>
+                <li><a ahref="#"><input type="button" class="btn btn-buy" onclick="location.href='/Home/Buy';" value="Book" /></a></li>
+            </ul>
 
-                        <p class="top-text">Reserving your tee time online is easy and fast.</p>
+        </div>
+    </div>
 
-                        <div class="row col-lg-12">
+    <div class="col-sm-6">
 
-                            <select class="form-control">
-                                <option>Select A Date</option>
-                                <option>Today</option>
-                                <option>Tomorrow</option>
-                                <option>This Saturday</option>
-                                <option>Tuesday</option>
-                            </select>
+        <h4 class="top-title">
+            Get Some Balls
+        </h4>
 
-                            <select class="form-control">
-                                <option>Select A Time</option>
-                                <option>Early</option>
-                                <option>Late</option>
-                                <option>Doesn't Matter</option>
-                            </select>
+        <p class="top-text">Get ready for the ultimate in ball service.</p>
 
-                       
-                                <button type="button" data-toggle="dropdown" class="btn btn-buy dropdown-toggle">Book <span class="caret"></span></button>
-                                <ul class="dropdown-menu">
-                                    <li><a ahref="#"><input type="button" style="width: 100%;" onclick="location.href='/Home/Buy';" value="Book" /></a></li>
-                                    <li><a ahref="#"><input type="button" style="width: 100%;" onclick="location.href='/Home/Buy';" value="Book" /></a></li>
-                                </ul>
+        <div class="row col-lg-12">
 
-                        </div>
+            <select class="form-control">
+                <option>Select A Driving Range Box</option>
+                <option>Arnold Palmer</option>
+                <option>Tiger Woods</option>
+                <option>The Shark</option>
+            </select>
 
-                       
+            <select class="form-control">
+                <option>Select A Time</option>
+                <option>Early</option>
+                <option>Late</option>
+                <option>Doesn't Matter</option>
+            </select>
 
-                    
+            <select class="form-control">
+                <option>Select Balls</option>
+                <option>Small Basket</option>
+                <option>Medium Basket</option>
+                <option>Large Basket</option>
+            </select>
 
-                    </div>
-
+            <div class="row col-lg-12">
+                <div class="">
+                    <input type="button" class="btn btn-buy" onclick="location.href='/Home/Buy';" value="Book" />
                 </div>
-
-            </div>
-
-            
-
-            <div class="col-lg-4 col-md-4 col-sm-4">
-
-                <div class="col-lg-12">
-                    @*<img src="" alt="" />*@
-                    <div class="row">
-
-                        <h4 class="top-title">
-                            Get Some Balls
-                        </h4>
-
-                        <p class="top-text">Get ready for the ultimate in ball service.</p>
-
-                        <div class="row col-lg-12">
-
-                            <select class="form-control">
-                                <option>Select A Driving Range Box</option>
-                                <option>Arnold Palmer</option>
-                                <option>Tiger Woods</option>
-                                <option>The Shark</option>
-                            </select>
-
-                            <select class="form-control">
-                                <option>Select A Time</option>
-                                <option>Early</option>
-                                <option>Late</option>
-                                <option>Doesn't Matter</option>
-                            </select>
-
-                            <select class="form-control">
-                                <option>Select Balls</option>
-                                <option>Small Basket</option>
-                                <option>Medium Basket</option>
-                                <option>Large Basket</option>
-                            </select>
-                            <div class="row col-lg-12">
-                                <div class="">
-                                    <input type="button" class="btn btn-buy" onclick="location.href='/Home/Buy';" value="Book" />
-                                </div>
-                            </div>
-
-                        </div>
-
-
-
-                    </div>
-
-                </div>
-
             </div>
 
         </div>
 
     </div>
 
-</div>
-
+</div> <!-- End Container -->

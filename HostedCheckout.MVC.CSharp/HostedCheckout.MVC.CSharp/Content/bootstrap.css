@@ -4965,7 +4965,6 @@ a.list-group-item.active > .badge,
 }
 
 .thumbnail {
-  display: inline-block;
   display: block;
   height: auto;
   max-width: 100%;
