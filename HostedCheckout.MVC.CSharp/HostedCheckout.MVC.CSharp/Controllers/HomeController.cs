@@ -36,6 +36,29 @@ namespace HostedCheckout.MVC.CSharp.Controllers
             return View();
         }
 
+        public ActionResult Reserve()
+        {
+            HCService.HCServiceSoapClient client = new HCService.HCServiceSoapClient();
+            HCService.InitPaymentRequest req = new HCService.InitPaymentRequest();
+            req.MerchantID = "935839278044253";
+            req.Password = "Rz%9NqTDGDcwxcMQ";
+            req.Invoice = "1234";
+            req.TotalAmount = 1.23;
+            req.TaxAmount = 0;
+            req.TranType = "Sale";
+            req.Frequency = "OneTime";
+            req.Memo = "dano test";
+            req.ProcessCompleteUrl = "http://localhost:51619/Home/Complete";
+            req.ReturnUrl = "http://localhost:51619/Home/Return";
+            req.OperatorID = "test";
+            req.DisplayStyle = "custom";
+            req.CancelButton = "on";
+            var resp = client.InitializePayment(req);
+
+            ViewBag.URL = "https://hc.mercurydev.net/CheckoutIFrame.aspx?ReturnMethod=get&pid=" + resp.PaymentID;
+            return View();
+        }
+
         public ActionResult Complete(string PaymentID, string ReturnCode, string ReturnMessage)
         {
             HCService.HCServiceSoapClient client = new HCService.HCServiceSoapClient();
