@@ -207,7 +207,7 @@ header {
     .btn-buy.active,
     .open .dropdown-toggle.btn-buy {
         color: #fff;
-        background-color: #067a3f;
+        background-color: #555;
         border-color: transparent;
     }
 

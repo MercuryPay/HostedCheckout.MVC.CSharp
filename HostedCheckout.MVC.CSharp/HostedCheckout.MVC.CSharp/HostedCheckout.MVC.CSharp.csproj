@@ -134,6 +134,7 @@
     <Content Include="Content\custom.css" />
     <Content Include="Content\img\background.JPG" />
     <Content Include="Content\img\background.png" />
+    <Content Include="Content\img\ball-on-tee.png" />
     <Content Include="Content\img\ball-tee-300.png" />
     <Content Include="Content\img\golf-tee.png" />
     <Content Include="Content\img\henry.png" />
