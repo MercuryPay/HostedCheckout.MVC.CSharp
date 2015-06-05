@@ -9,7 +9,10 @@
 
 Visual Studio MVC website application that shows how to integrate to Mercury's Hosted Checkout platform using an iFrame and performs styling of the hosted site using CSS.
 
-![HostedCheckout.MVC.CSharp](https://github.com/mercurypay/HostedCheckout.MVC.CSharp/blob/master/screenshot.PNG)
+![HostedCheckout.MVC.CSharp](https://github.com/mercurypay/HostedCheckout.MVC.CSharp/blob/master/screenshot1.PNG)
+
+
+![HostedCheckout.MVC.CSharp](https://github.com/mercurypay/HostedCheckout.MVC.CSharp/blob/master/screenshot2.PNG)
 
 # Payment Processing
 
