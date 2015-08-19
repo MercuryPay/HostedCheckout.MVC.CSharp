@@ -74,7 +74,7 @@ var resp = client.VerifyPayment(req);
 
 #CSS Styling
 
-There are two webmethods that will help you perform CSS styling of the hosted page:
+There are two webmethods that will help you perform CSS styling of the hosted page and are shown below.  After uploading the initial CSS you can modify the CSS by calling UploadCSS again which will overwrite the original.  The only reason to call RemoveCSS is if you no longer require CSS customization or to test/validate that your CSS customizations are taking effect.
 
 ## UploadCSS
 
