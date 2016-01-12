@@ -17,8 +17,8 @@ namespace HostedCheckout.MVC.CSharp.Controllers
         {
             HCService.HCServiceSoapClient client = new HCService.HCServiceSoapClient();
             HCService.InitPaymentRequest req = new HCService.InitPaymentRequest();
-            req.MerchantID = "935839278044253";
-            req.Password = "Rz%9NqTDGDcwxcMQ";
+            req.MerchantID = "778825006";
+            req.Password = "2HGr98w5qS6+G2Wj";
             req.Invoice = "1234";
             req.TotalAmount = 1.23;
             req.TaxAmount = 0;
@@ -32,7 +32,7 @@ namespace HostedCheckout.MVC.CSharp.Controllers
             req.CancelButton = "on";
             var resp = client.InitializePayment(req);
 
-            ViewBag.URL = "https://hc.mercurydev.net/CheckoutIFrame.aspx?ReturnMethod=get&pid=" + resp.PaymentID;
+            ViewBag.URL = "https://hc.mercurycert.net/CheckoutIFrame.aspx?ReturnMethod=get&pid=" + resp.PaymentID;
             return View();
         }
 
@@ -40,8 +40,8 @@ namespace HostedCheckout.MVC.CSharp.Controllers
         {
             HCService.HCServiceSoapClient client = new HCService.HCServiceSoapClient();
             HCService.InitPaymentRequest req = new HCService.InitPaymentRequest();
-            req.MerchantID = "935839278044253";
-            req.Password = "Rz%9NqTDGDcwxcMQ";
+            req.MerchantID = "778825006";
+            req.Password = "2HGr98w5qS6+G2Wj";
             req.Invoice = "1234";
             req.TotalAmount = 1.23;
             req.TaxAmount = 0;
@@ -55,7 +55,7 @@ namespace HostedCheckout.MVC.CSharp.Controllers
             req.CancelButton = "on";
             var resp = client.InitializePayment(req);
 
-            ViewBag.URL = "https://hc.mercurydev.net/CheckoutIFrame.aspx?ReturnMethod=get&pid=" + resp.PaymentID;
+            ViewBag.URL = "https://hc.mercurycert.net/CheckoutIFrame.aspx?ReturnMethod=get&pid=" + resp.PaymentID;
             return View();
         }
 
@@ -63,8 +63,8 @@ namespace HostedCheckout.MVC.CSharp.Controllers
         {
             HCService.HCServiceSoapClient client = new HCService.HCServiceSoapClient();
             HCService.PaymentInfoRequest req = new HCService.PaymentInfoRequest();
-            req.MerchantID = "935839278044253";
-            req.Password = "Rz%9NqTDGDcwxcMQ";
+            req.MerchantID = "778825006";
+            req.Password = "2HGr98w5qS6+G2Wj";
             req.PaymentID = PaymentID;
             var resp = client.VerifyPayment(req);
 
@@ -74,8 +74,8 @@ namespace HostedCheckout.MVC.CSharp.Controllers
         public ActionResult RemoveCSS()
         {
             var request = new HCService.CssRemoveRequest();
-            request.MerchantID = "935839278044253";
-            request.Password = "Rz%9NqTDGDcwxcMQ";
+            request.MerchantID = "778825006";
+            request.Password = "2HGr98w5qS6+G2Wj";
 
             var client = new HCService.HCServiceSoapClient();
 
@@ -97,8 +97,8 @@ namespace HostedCheckout.MVC.CSharp.Controllers
         {
 
             HCService.CssUploadRequest request = new HCService.CssUploadRequest();
-            request.MerchantID = "935839278044253";
-            request.Password = "Rz%9NqTDGDcwxcMQ";
+            request.MerchantID = "778825006";
+            request.Password = "2HGr98w5qS6+G2Wj";
             request.Css = ".btnDefaultIFrame {color: #fff; background-color: #f7901e; border-color: transparent; border: 1px solid transparent; border-radius: 2px;} .btnDefaultIFrame:hover {color: #fff; background-color: #f6801a; border-color: transparent;} .divTotalIFrameDefault {display: none;} .divSecurityLogoIFrame {display: none;} .divLogo {display: none;} .watermarkCustom {color: #aaaaaa; font-style: normal; vertical-align: middle; font-size: large; padding: 3px;} #divMainIFrame{width: 450px; font-family: arial; font-size: large; height:100%; clear: left; border: none;}";
 
             HCService.HCServiceSoapClient client = new HCService.HCServiceSoapClient();
