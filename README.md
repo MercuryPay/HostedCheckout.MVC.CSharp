@@ -45,7 +45,7 @@ var resp = client.InitializePayment(req);
 In the Home Controller's Buy action we are setting the ViewBag.URL property to the URL of the hosted checkout page and appending the PaymentID returned in the response.  We will use this ViewBag property when rendering the page in the View.
 
 ```
-ViewBag.URL = "https://hc.mercurydev.net/CheckoutIFrame.aspx?ReturnMethod=get&pid=" + resp.PaymentID;
+ViewBag.URL = "https://hc.mercurycert.net/CheckoutIFrame.aspx?ReturnMethod=get&pid=" + resp.PaymentID;
 ```
 
 This code is in the Buy.cshtml View.  Notice we are setting the src property of the iframe to the ViewBag.URL that we set above.  When we set this src property and the iframe renders the iframe will be redirected to the Hosted Checkout page where the customer will enter their card data.
