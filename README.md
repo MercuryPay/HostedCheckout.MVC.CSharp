@@ -16,7 +16,7 @@ Visual Studio MVC website application that shows how to integrate to Mercury's H
 
 # Payment Processing
 
-##Step 1: Initialize Payment
+## Step 1: Initialize Payment
 
 Note:  req.DisplayStyle = "custom" -- this allows for custom styling attributes via a CSS upload mechanism.
 
@@ -40,7 +40,7 @@ var resp = client.InitializePayment(req);
 ```
 
 
-##Step 2: Display HostedCheckout
+## Step 2: Display HostedCheckout
 
 In the Home Controller's Buy action we are setting the ViewBag.URL property to the URL of the hosted checkout page and appending the PaymentID returned in the response.  We will use this ViewBag property when rendering the page in the View.
 
@@ -59,7 +59,7 @@ This code is in the Buy.cshtml View.  Notice we are setting the src property of 
 
 ```
 
-##Step 3: Verify Payment
+## Step 3: Verify Payment
 
 After the customer enters their card data and presses submit the payment is processed.  When payment processing is complete the browser is redirected to the ProcessCompleteUrl sent during InitializePayment.  At that point the VerifyPayment method is called to gain access to all of the properties of the response.
 
@@ -72,7 +72,7 @@ req.PaymentID = PaymentID;
 var resp = client.VerifyPayment(req);
 ```
 
-#CSS Styling
+# CSS Styling
 
 Make sure to set DisplayStyle = "custom" in the InitPayment call to allow CSS customization.
 
@@ -104,7 +104,7 @@ var response = client.RemoveCSS(request);
 ```
 
 
-###©2015 Mercury Payment Systems, LLC - all rights reserved.
+### ©2015 Mercury Payment Systems, LLC - all rights reserved.
 
 Disclaimer:
 This software and all specifications and documentation contained herein or provided to you hereunder (the "Software") are provided free of charge strictly on an "AS IS" basis. No representations or warranties are expressed or implied, including, but not limited to, warranties of suitability, quality, merchantability, or fitness for a particular purpose (irrespective of any course of dealing, custom or usage of trade), and all such warranties are expressly and specifically disclaimed. Mercury Payment Systems shall have no liability or responsibility to you nor any other person or entity with respect to any liability, loss, or damage, including lost profits whether foreseeable or not, or other obligation for any cause whatsoever, caused or alleged to be caused directly or indirectly by the Software. Use of the Software signifies agreement with this disclaimer notice.
